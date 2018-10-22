@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//me malloc testing...
 int main()
 {
 	int ar1[4]={0},ar2[4]={0},ar3[4]={0};
