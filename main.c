@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main()
 {
 	int ar1[4]={0},ar2[4]={0},ar3[4]={0};
@@ -19,12 +18,9 @@ int main()
 			if (apodotikotita>0){
 				k++;
 				ar4[k]=apodotikotita;
-				
 			}
 			i++;
 		}
-		
-	
 		printf("Printing Array with results...\n");
 		for(i=0;i<n;i++){
 			printf("i=%d=%d=%d=%d\n",i,ar1[i],ar2[i],ar3[i]);
@@ -40,24 +36,16 @@ int main()
 					ar4[j]=ar4[j-1];
 					ar4[j-1]=temp;
 				} 
-			//	if(ar4[j]==ar4[j-1]){
-
 			}
 		}
 		printf("Meta to bubble sort\n");
 		for(i=0;i<=k;i++){
 			printf("k=%d-apodotikotita=%f\n",i,ar4[i]);
 		}
-		
-		
 		fp=fopen("out.txt", "w");//write to file
-	
 	}
 	else{
 		printf("...error while opening file...");
 	}
-	
-	
-	
 	return 0;
 }
